@@ -1,4 +1,6 @@
 # README
+Used Ruby With Mine
+1. To run this program download the file and open the terminal on the folder and type "rails server"
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
