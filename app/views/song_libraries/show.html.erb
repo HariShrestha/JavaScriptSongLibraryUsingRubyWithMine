@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>id:</strong>
+  <%= @song_library.Song_id %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @song_library.Title %>
+</p>
+
+<p>
+  <strong>Artist:</strong>
+  <%= @song_library.Artist %>
+</p>
+
+<p>
+  <strong>Release date:</strong>
+  <%= @song_library.Release_Date %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @song_library.Price %>
+</p>
+
+<%= link_to 'Edit', edit_song_library_path(@song_library) %> |
+<%= link_to 'Back', song_libraries_path %>

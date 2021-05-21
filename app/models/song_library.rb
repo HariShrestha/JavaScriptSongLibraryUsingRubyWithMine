@@ -1,0 +1,3 @@
+class SongLibrary < ApplicationRecord
+
+end

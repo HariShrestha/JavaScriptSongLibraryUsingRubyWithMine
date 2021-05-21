@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Song Libraries</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>id</th>
+      <th>Title</th>
+      <th>Artist</th>
+      <th>ReleaseDate</th>
+      <th>Price($)</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+  <h4> Search </h4>
+  <%= form_tag(song_libraries_path, method: :get) do %>
+    <%= text_field_tag(:search, params[:search]) %>
+    <%= submit_tag ("Search") %>
+
+  <% end %>
+    <% @song_libraries.each do |song_library| %>
+      <tr>
+        <td><%= song_library.Song_id %></td>
+        <td><%= song_library.Title %></td>
+        <td><%= song_library.Artist %></td>
+        <td><%= song_library.Release_Date %></td>
+        <td><%= song_library.Price %></td>
+        <td><%= link_to 'Show', song_library %></td>
+        <td><%= link_to 'Edit', edit_song_library_path(song_library) %></td>
+        <td><%= link_to 'Destroy', song_library, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Song Library', new_song_library_path %>
