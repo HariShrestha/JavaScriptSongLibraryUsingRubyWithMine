@@ -1,6 +1,7 @@
 # README
 Used Ruby With Rails
 1. To run this program download the file and open the terminal on the folder and type "rails server"
+2. Once you have the program check http://localhost:3000/song_libraries to view the website
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
